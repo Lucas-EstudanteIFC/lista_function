@@ -6,11 +6,14 @@
     */
 
     //Entrada
-
+    const celsius = parseInt(prompt(`Informe uma temperatura em celsius.`).trim());
 
     //Processamento
+    function conversao (numero) {
+        let fahrenheit = (9 * numero + 160) / 5;
+        return fahrenheit;
+    }
 
-
-    //Saída
-
+    //Saída 
+    alert(`A temperatura em fahrenheit é ${conversao(celsius)}F.`);
 </script>

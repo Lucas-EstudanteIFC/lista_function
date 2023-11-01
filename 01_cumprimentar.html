@@ -6,12 +6,16 @@
     *Substitua a palavra Visitante pelo nome do usuário, que será fornecido pelo próprio usuário.
     */
 
+    function saudacao(nome) {
+        return "Bom dia, " + nome + "!";
+    }
     //Entrada
-
+    let nome = prompt(`Qual o seu nome?`).trim();
 
     //Processamento
 
 
     //Saída
-    
+    let resultado = saudacao(nome)
+    alert(resultado);
 </script>

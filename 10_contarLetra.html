@@ -6,11 +6,21 @@
     */
 
     //Entrada
-
+    const frase = prompt(`Informe uma frase.`).trim().toLowerCase();
+    const letraAContar = prompt(`Informe a letra a ser contada.`).trim().toLowerCase();
 
     //Processamento
-
+    function contarLetra(frase, letra) {
+        Array.from(frase);
+        let contador = 0;
+        for (const letra of frase) {
+            if (letra == letraAContar) {
+                contador++;
+            }
+        }
+        return contador;
+    }
 
     //Saída
-
+    alert(`A letra ${letraAContar} apareceu ${contarLetra(frase, letraAContar)}`);
 </script>

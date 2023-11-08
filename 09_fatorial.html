@@ -5,11 +5,19 @@
     */
 
     //Entrada
-
-
+    let number = parseInt(prompt(`Infome um número inteiro.`).trim());
+    const guarda = number;
+    
     //Processamento
-
+    function fatorial(number) {
+        let resultado = number;
+        while (number > 1){
+            number--;
+            resultado = resultado * number;
+        }
+        return resultado
+    }
 
     //Saída
-
+    alert(`O fatorial de ${guarda} é ${fatorial(number)}.`);
 </script>

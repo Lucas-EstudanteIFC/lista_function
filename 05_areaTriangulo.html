@@ -6,11 +6,15 @@
     */
 
     //Entrada
-
+    const altura = parseFloat(prompt(`Informe uma altura para um triângulo.`).trim().replace(",", "."));
+    const base = parseFloat(prompt(`Informe uma base para um triângulo.`).trim().replace(",", "."));
 
     //Processamento
-
-
+    function area(base, altura) {
+        let calculo = (base * altura) / 2;
+        return calculo
+    }
+    
     //Saída
-
+    alert(`A área do triângulo, com as informações fornecidas, é de ${area(base, altura)}.`);
 </script>

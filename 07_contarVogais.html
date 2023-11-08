@@ -7,11 +7,20 @@
     */
 
     //Entrada
-
+    const string = prompt(`Informe uma palavra qualquer.`).trim().replace("á", "a").replace("ã", "a").replace("é", "e").replace("í", "i").replace("ó", "o").replace("õ", "o").replace("ú", "u");
 
     //Processamento
-
+    function contagem(string) {
+        Array.from(string);
+        let contador = 0;
+        for (const letra of string) {
+            if (letra == "a" || letra == "e" || letra == "i" || letra == "o" || letra == "u") {
+                contador++;
+            }
+        }
+        return contador;
+    }
 
     //Saída
-
+    alert(`A palavra possuí ${contagem(string)} vogais.`);
 </script>

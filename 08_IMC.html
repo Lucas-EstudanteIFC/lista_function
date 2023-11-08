@@ -6,11 +6,15 @@
     */
 
     //Entrada
-
+    const peso = parseFloat(prompt(`Informe seu peso.`).trim().replace(",", "."));
+    const altura = parseFloat(prompt(`Infome sua altura`).trim().replace(",", "."));
 
     //Processamento
-
+    function imc(peso, altura) {
+        let imc = peso / (altura ** 2);
+        return imc;
+    }
 
     //Saída
-
+    alert(`Seu IMC é de ${(imc(peso, altura)).toFixed(1).replace(".", ",")}.`);
 </script>

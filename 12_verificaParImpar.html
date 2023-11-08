@@ -5,11 +5,19 @@
     */
 
     //Entrada
-
+    const number = parseInt(prompt(`Informe um número.`).trim());
 
     //Processamento
-
+    function validar(number) {
+        if (number % 2 == 0) {
+            return "É par.";
+        }
+        else {
+            return "É ímpar.";
+        }
+    }
 
     //Saída
+    alert(validar(number));
 
 </script>
